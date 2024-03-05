@@ -44,7 +44,7 @@ const Form = () => {
           <h2>Get in touch</h2>
           <hr></hr>
         </div>
-        <div className="contact-inputs">
+        <div>
           <label htmlFor="name">Your name: </label>
           <input
             type="text"
@@ -53,7 +53,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className="contact-inputs">
+        <div>
           <label htmlFor="email">Your email: </label>
           <input
             type="email"
@@ -62,7 +62,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className="contact-inputs">
+        <div>
           <label htmlFor="message">Your message: </label>
           <textarea
             value={message}
@@ -70,7 +70,7 @@ const Form = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={message.length < 10}>Submit</button>
       </form>
     </div>
   );
