@@ -13,7 +13,7 @@ const App = () => {
         cognitive science where I have studied the mind and its processes. Also,
         I have learned coping strategies and expanded a variety of interests to
         maximize my potential." 
-        imageUrl="/img/jessica.jpg"/>
+        imageUrl="/public/jessica.jpg"/>
       <LinkButtons url="https://www.linkedin.com/in/jessicacheng0217" label="LinkedIn"/>
       <LinkButtons url="https://github.com/codewithjessica" label="GitHub"/>
       <LinkButtons url="/public/Jessica_Resume.pdf" label="Resume"/>
