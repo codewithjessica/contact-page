@@ -42,7 +42,7 @@ const Form = () => {
     <div className="contact-form">
       <h2>Contact me</h2>
       <p>
-        Send me a message via <b>codewithjessica@outlook.com</b>
+        Send me an email to <b>codewithjessica@outlook.com</b>
       </p>
       <p>or fill in this form</p>
       <form className="contact-items" onSubmit={handleSubmit}>
