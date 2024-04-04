@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
+import LinkButtons from "./LinkButtons";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -39,39 +40,51 @@ const Form = () => {
 
   return (
     <div className="contact-form">
-      <form onSubmit={handleSubmit} className="contact-item">
-        <div className="contact-title">
-          <h2>Get in touch</h2>
-          <hr></hr>
-        </div>
-        <div>
-          <label htmlFor="name">Your name: </label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Your email: </label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Your message: </label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          ></textarea>
-        </div>
-        <button type="submit" disabled={message.length < 10}>Submit</button>
+      <h2>Contact me</h2>
+      <p>
+        Send me a message via <b>codewithjessica@outlook.com</b>
+      </p>
+      <p>or fill in this form</p>
+      <form className="contact-items" onSubmit={handleSubmit}>
+        <label htmlFor="name"></label>
+        <input
+          type="text"
+          value={name}
+          placeholder="Your Name"
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <label htmlFor="email"></label>
+        <input
+          type="email"
+          value={email}
+          placeholder="Your Email"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <label htmlFor="message"></label>
+        <textarea
+          value={message}
+          placeholder="Your Message (min. length: 10 characters)"
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        ></textarea>
+        <button
+          type="submit"
+          disabled={message.length < 10}
+          className="submit-button"
+        >
+          Submit
+        </button>
       </form>
+      <div className="link-buttons-container">
+        <LinkButtons
+          url="https://www.linkedin.com/in/jessicacheng0217"
+          label="LinkedIn"
+        />
+        <LinkButtons url="https://github.com/codewithjessica" label="GitHub" />
+        <LinkButtons url="/public/Jessica_Resume.pdf" label="Resume" />
+      </div>
     </div>
   );
 };

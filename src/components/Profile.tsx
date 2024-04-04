@@ -1,20 +1,21 @@
 import "./Profile.css";
 
 interface ProfileProps {
-   bio: string;
-   imageUrl: string;
+  imageUrl: string;
+  userName: string;
+  bio: string;
 }
 
-const Profile = ({bio, imageUrl}: ProfileProps) => {
+const Profile = ({ imageUrl, userName, bio }: ProfileProps) => {
   return (
-    <div>
-      <h1 className="heading"> Welcome to my site</h1>
-      <p>My name is Jessica</p>
-      <h2>Bio</h2>
-      <p>
-        {bio}
-      </p>
-      <img className="profile-pic" src={imageUrl} alt="profile picture"></img>
+    <div className ="container">
+      <div className="profile-pic"> 
+        <img src={imageUrl} alt="Stitch Waving GIF"></img>
+      </div>
+      <div className="profile-content">
+        <h2>Hi, I'm {userName} 👋🏻</h2>
+        <p>{bio}</p>
+      </div>
     </div>
   );
 };

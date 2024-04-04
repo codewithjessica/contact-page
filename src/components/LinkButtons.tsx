@@ -9,9 +9,14 @@ interface LinkButtonProps {
 
 const LinkButtons = ({url, label}: LinkButtonProps) => {
   return (
-    <div>
-        <a href={url} target="_blank">
-        <button className="button">{label}</button>
+    <div className="buttons">
+        <a 
+          href={url} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          {label}
         </a>
     </div>
   )
