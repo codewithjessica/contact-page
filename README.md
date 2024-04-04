@@ -3,7 +3,7 @@
 This contact page demonstrage the understanding of react components and typeScript. This page will display a photo, and a short biography, and have buttons for external links (LinkedIn, GitHub, and a resume). Each section will be modularized into components, utilizing external CSS for styling.
 
 
-🔗 <b>View my project:</b> https://codewithjessica-react.netlify.app
+🔗 <b>View my project:</b> https://codewithjessica-contact-page.netlify.app/
 
 ## Build Project
 
