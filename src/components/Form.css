@@ -49,13 +49,14 @@
   background-color: #b4b4b8;
 }
 
-.link-buttons-container {
+.submit-button:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+ }
+
+.buttons-container {
   display: flex;
   justify-content: space-between; 
   align-items: center;
  }
 
- .submit-button:disabled {
-  background-color: #cccccc; 
-  cursor: not-allowed;
- }

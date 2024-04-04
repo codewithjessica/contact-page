@@ -77,7 +77,7 @@ const Form = () => {
           Submit
         </button>
       </form>
-      <div className="link-buttons-container">
+      <div className="buttons-container">
         <LinkButtons
           url="https://www.linkedin.com/in/jessicacheng0217"
           label="LinkedIn"
